@@ -65,7 +65,7 @@ async function queryAPI(form){
         displayData(name, curr, high, low, feelsLike, humidity, pressure);
     }
     catch(error){
-        alert(query + 'was not found! Try again!');
+        alert(query + ' was not found! Try again!');
     }
 
 }
