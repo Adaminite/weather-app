@@ -48,7 +48,7 @@ async function queryAPI(form){
     let name; let high; let low; let curr;
     let feelsLike; let humidity; let pressure;
     try{
-        const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q=' + query + ',&APPID=e3b7d2d1812c5267ab1af4eee253f489', {mode: 'cors'});
+        const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + query + ',&APPID=e3b7d2d1812c5267ab1af4eee253f489', {mode: 'cors'});
         data = await response.json();
 
         //console.log(data);
